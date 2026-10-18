@@ -3,35 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qamar Stories | Bilingual Bedtime Stories for Kids (English & Arabic)</title>
+<title>Qamar Stories | Bilingual Bedtime Stories for Kids (English &amp; Arabic)</title>
 <meta name="description" content="Free short bedtime stories for kids in English and Arabic. A new calm, kind story every night, for ages 3 to 8.">
+<link rel="canonical" href="https://bms-lab.github.io/kids-stories/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qamar Stories">
+<meta property="og:url" content="https://bms-lab.github.io/kids-stories/">
+<meta property="og:title" content="Qamar Stories: bedtime stories in English &amp; Arabic">
+<meta property="og:description" content="A new short, calm bedtime story every night, in English and Arabic, for ages 3 to 8.">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
-<!-- AdSense: paste your AdSense <script> here after approval -->
+<!-- AdSense: paste your AdSense <script> here after approval, and update privacy.html first -->
 </head>
 <body>
+<a class="skip" href="#grid">Skip to stories</a>
 <header class="top">
   <a class="logo" href="index.html">🌙 Qamar Stories</a>
   <nav><a href="about.html">About</a><a href="privacy.html">Privacy</a></nav>
 </header>
-<main>
+<main id="main">
   <section class="hero">
     <h1>Bedtime stories in English &amp; Arabic</h1>
     <p>A new short, calm story every night. Read it in one language or both.</p>
-    <p dir="rtl">قصة جديدة قبل النوم كل ليلة، بالعربية والإنجليزية</p>
+    <p lang="ar" dir="rtl">قصة جديدة قبل النوم كل ليلة، بالعربية والإنجليزية</p>
   </section>
-  <div class="filters">
-    <input id="q" type="search" placeholder="Search a story, animal, or value…" aria-label="Search">
-    <select id="age" aria-label="Age">
+  <div class="filters" role="search">
+    <label class="sr" for="q">Search stories</label>
+    <input id="q" type="search" placeholder="Search a title, animal, or value…" autocomplete="off">
+    <label class="sr" for="age">Age</label>
+    <select id="age">
       <option value="">All ages</option>
       <option value="3-5">Ages 3-5</option>
       <option value="6-8">Ages 6-8</option>
     </select>
   </div>
+  <p id="results-status" class="status" role="status" aria-live="polite">2 stories</p>
   <div class="ad-slot"><!-- ad slot --></div>
-  <section id="grid" class="grid"></section>
+  <section id="grid" class="grid" aria-label="Stories">
+    <a class="card" href="stories/samira-and-the-little-thank-you-stars.html" data-age="6-8" data-search="Samira and the Little Thank-You Stars سميرة ونجوم الشكر الصغيرة gratitude A little desert fox learns that counting small thank-yous brings a warm, sleepy heart.">
+      <div class="emoji" aria-hidden="true">🌟</div>
+      <h3>Samira and the Little Thank-You Stars</h3>
+      <div class="ar" lang="ar" dir="rtl">سميرة ونجوم الشكر الصغيرة</div>
+      <p class="sum">A little desert fox learns that counting small thank-yous brings a warm, sleepy heart.</p>
+      <span class="tag">Ages 6-8</span>
+    </a>
+    <a class="card" href="stories/zaytoun-and-the-broken-lantern.html" data-age="3-5" data-search="Zaytoun and the Broken Lantern زيتون والفانوس المكسور saying sorry A little fennec fox breaks his friend&#39;s lantern by accident and learns that saying sorry makes hearts feel warm again.">
+      <div class="emoji" aria-hidden="true">🏮</div>
+      <h3>Zaytoun and the Broken Lantern</h3>
+      <div class="ar" lang="ar" dir="rtl">زيتون والفانوس المكسور</div>
+      <p class="sum">A little fennec fox breaks his friend&#39;s lantern by accident and learns that saying sorry makes hearts feel warm again.</p>
+      <span class="tag">Ages 3-5</span>
+    </a>
+  </section>
 </main>
-<footer>© Qamar Stories · Free stories for families · <a href="privacy.html">Privacy</a></footer>
+<footer>© Qamar Stories · Free stories for families · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a></footer>
 <script src="assets/app.js"></script>
 </body>
 </html>
